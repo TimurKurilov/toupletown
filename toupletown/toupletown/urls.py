@@ -5,6 +5,6 @@ from quote import views as quoteviews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", weatherviews.main, name="main"),
+    path("", weatherviews.main_page, name="main"),
     path("quote/", quoteviews.get_quote, name="quote")
 ]
